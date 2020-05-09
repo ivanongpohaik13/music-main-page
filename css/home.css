@@ -1,0 +1,106 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Arial;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  width: 100%;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 1;
+}
+img{
+  float: left;
+  padding: 0px 20px;
+  margin: -40px 10px;
+}
+.nav div {
+  text-align: center;
+  padding: 25px;
+}
+
+.back, .back1 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  position: relative;
+  z-index: 0;
+}
+
+.slide1 {
+  box-sizing: border-box;
+  text-overflow: clip;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 60%;
+  padding: 20px;
+  position: absolute;
+  right: 0;
+  top: 200px;
+  z-index: 1;
+  animation: fromright 1s ease;
+}
+@keyframes fromright {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    width: 60%;
+    opacity: 0.5;
+  }
+}
+
+button {
+  border: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 20px;
+  background-color: rgba(80, 80, 80, 0.5);
+  color: white;
+  float: center;
+}
+button:hover {
+  background-color: rgba(80, 80, 80, 1);
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+a:link{
+  color: white;
+}
+a:visited{
+  color: white;
+}
+/*.back1{
+  background-image: url('./img/headphone.jpg');
+  background-color: green;
+}*/
+
+/*@media screen and (max-width:600px){
+  .back1{background-color: yellow;background-image: url(./img/headphone.jpg)};
+}
+
+@media screen and (min-width:600px){
+  .back1{background-color: green;background-image: url(./img/violin.jpg)};
+}*/
+
+footer {
+  height: 100px;
+  background: black;
+  width: 100%;
+}
